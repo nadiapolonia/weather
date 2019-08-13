@@ -1,14 +1,28 @@
 <!DOCTYPE html>
 <html>
   <head lang="en">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>weather</title>
-    <link rel="shortcut icon" href="/favicon.ico">
-    <link rel="stylesheet" href="/screen.css">
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <link rel="stylesheet" href="/screen.css" />
   </head>
   <body>
-    <h1 class='hello-world'></h1>
+    <img
+      src="http://www.pngall.com/wp-content/uploads/2017/01/Weather-Report-Free-Download-PNG.png"
+    />
+    <h1>Today's Weather</h1>
+    <p class="display-weather"></p>
+    <p class="display-temp"></p>
+    <form
+      action="http://api.openweathermap.org/data/2.5/weather?q=&appid=0fff47daf68ef5c328e0005a1cc99780"
+      method="get"
+      target="_"
+      id="my-form"
+    >
+      <input type="text" class="text" placeholder="City name ex: Tampa, FL" />
+      <input type="button" class="button" value="Submit" />
+    </form>
     <script src="/main.js" charset="utf-8"></script>
   </body>
 </html>
